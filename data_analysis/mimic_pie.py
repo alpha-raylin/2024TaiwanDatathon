@@ -33,7 +33,6 @@ plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140, colors=colors, 
 plt.axis('equal')  # Equal aspect ratio ensures that pie chart is circular.
 plt.title('MIMIC-IV Age and Gender Distribution', fontsize=14)
 plt.savefig('figure/mimic_pie_1.png')
-plt.show()
 
 # Categorize age and gender
 df['age_category'] = df['anchor_age'].apply(lambda x: 'Young' if x < 50 else 'Old')
@@ -78,4 +77,3 @@ axs[1].set_title('Died (1) Distribution', fontsize=14)
 plt.tight_layout()
 
 plt.savefig('figure/mimic_pie_2.png')
-plt.show()

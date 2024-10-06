@@ -55,4 +55,3 @@ plt.tight_layout()
 plt.savefig('figure/mimic_bar.png')
 
 # Show the plot
-plt.show()
