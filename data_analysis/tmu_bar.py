@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('TMU.csv') 
 
 # Categorize age and gender
-df['age_category'] = df['age'].apply(lambda x: 'young' if x < 50 else 'old')
-df['gender_category'] = df['gender'].apply(lambda x: 'male' if x == 1 else 'female')
+df['age_category'] = df['age'].apply(lambda x: 'Young' if x < 50 else 'Old')
+df['gender_category'] = df['gender'].apply(lambda x: 'Male' if x == 1 else 'Female')
 
 # Group by age, gender categories, and mortality
 counts = df.groupby(['age_category', 'gender_category', 'mortality']).size().reset_index(name='counts')
