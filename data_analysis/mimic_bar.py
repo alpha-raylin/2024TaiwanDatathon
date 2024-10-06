@@ -44,7 +44,7 @@ for i in range(len(pivot_counts)):
 # Customize the plot
 plt.xlabel('Group', fontsize=12)
 plt.ylabel('Count', fontsize=12)
-plt.title('TMU Count of Mortality by Age and Gender Categories', fontsize=14)
+plt.title('MIMIC-IV Count of Mortality by Age and Gender Categories', fontsize=14)
 plt.xticks([p + bar_width / 2 for p in x], 
            [f"{row['age_category']} {row['gender_category']}" for _, row in pivot_counts.iterrows()])
 
